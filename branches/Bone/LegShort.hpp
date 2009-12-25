@@ -1,0 +1,33 @@
+/**
+*
+*	Klasa opisujaca model krótkiej nogi
+*
+*
+**/
+
+#ifndef LEGSHORT_H
+#define LEGSHORT_H
+
+#include "glut.h"
+#include "glutFunc.hpp"
+
+#include "LegCompShort.hpp"
+#include "Bone.hpp"
+#include "Leg.hpp"
+
+class LegShort : public Leg
+{
+public:
+	LegShort();//(GLfloat x, GLfloat y, GLfloat a, GLfloat b);
+	~LegShort();
+
+	void Draw();
+	
+
+private:
+	LegCompShort* compShort0;
+	LegCompShort* compShort1;
+	Bone* bone;
+};
+
+#endif
